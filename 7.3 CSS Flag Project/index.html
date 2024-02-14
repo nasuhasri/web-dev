@@ -6,6 +6,7 @@
   <title>CSS Flag Project</title>
   <style>
     /* Write your CSS Code here */
+    /* red rect - parent has relative position */
     .flag {
       background-color: #CE1126;
       color: white;
@@ -13,22 +14,34 @@
       height: 600px;
       font-size: 100px;
       text-align: center;
+      position: relative;
     }
 
+    /* blue rect - child has absolute position */
     .flag > div {
       background-color: #002868;
+      /* or can just put 900px */
+      width: 100%;
+      /* takes half of red rectangle */
       height: 300px;
+      position: absolute;
+      top: 150px;
     }
 
-    .flag div > p {
+    .flag div > div {
       background-color: white;
       color: black;
       height: 200px;
       width: 200px;
       border-radius: 50%;
       position: relative;
-      top: 150px;
-      left: 450px;
+      top: 50px;
+      left: 350px;
+    }
+
+    p {
+      margin: 0;
+      font-size: 5rem;
     }
   </style>
 </head>
