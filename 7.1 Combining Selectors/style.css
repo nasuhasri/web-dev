@@ -1,0 +1,26 @@
+/* Write your code here: */
+/* group rule */
+h1, h2 {
+    color: blueviolet;
+}
+
+/* child rule - parent and chile */
+/* can change div to .box */
+div > p {
+    color: firebrick;
+}
+
+/* descendant rule */
+.box li {
+    color: blue;
+}
+
+/* chaining rule */
+li.done {
+    color: seagreen;
+}
+
+/* combining combiners - use chaining, can also use child selector */
+ul p.done {
+    font-size: 0.5rem;
+}
