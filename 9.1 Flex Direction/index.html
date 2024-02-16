@@ -13,9 +13,8 @@
     .container {
       color: white;
       border: 5px solid gold;
-      display: flex;
+      display: inline-flex;
       flex-direction: column;
-      width: 50px;
     }
 
     /*
@@ -31,7 +30,7 @@ children of the .container class.
     .indigo {background-color: #30336b;}
     .purple {background-color: #be2edd;}
 
-    .container div {
+    .container > div {
       flex-basis: 100px;
     }
   </style>
